@@ -1,4 +1,7 @@
 ---
+workflow:
+    - second_main
+
 # Shared definition block
 # This is where you would define any attributes that all your jobs will 
 # inherit.
