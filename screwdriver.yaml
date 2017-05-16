@@ -29,9 +29,11 @@ jobs:
       # Rakefile
       - rake: bundle exec rake
       - puts: echo $SUPERSECRETYELLINGKEY
+      - set: HELLO='asldfjhajklsdhfkjalsdf'
     secrets:
       - SUPERSECRETYELLINGKEY
   second_main:
     steps:
       - hello: echo 'hello'
+      - print: echo $HELLO
 
