@@ -26,4 +26,6 @@ jobs:
       # Rakefile
       - rake: bundle exec rake
       - puts: echo $SUPERSECRETYELLINGKEY
+    secrets:
+      - SUPERSECRETYELLINGKEY
 
