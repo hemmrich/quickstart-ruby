@@ -28,4 +28,7 @@ jobs:
       - puts: echo $SUPERSECRETYELLINGKEY
     secrets:
       - SUPERSECRETYELLINGKEY
+  second_main:
+    steps:
+      - hello: echo 'hello'
 
