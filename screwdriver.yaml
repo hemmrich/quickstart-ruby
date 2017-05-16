@@ -29,11 +29,11 @@ jobs:
       # Rakefile
       - rake: bundle exec rake
       - puts: echo $SUPERSECRETYELLINGKEY
-      - set: HELLO='asldfjhajklsdhfkjalsdf'
+      - set: meta set teststring 'helloreetikav2'
     secrets:
       - SUPERSECRETYELLINGKEY
   second_main:
     steps:
       - hello: echo 'hello'
-      - print: echo $HELLO
+      - print: meta get teststring
 
